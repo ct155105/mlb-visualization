@@ -1,0 +1,11 @@
+{
+    "name": "Flask API",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "api",
+    "shutdownAction": "none",
+    "extensions": ["ms-python.python"],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/workspace/api",
+    "forwardPorts": [5000],
+    "postCreateCommand": "pip install -r requirements.txt"
+  }
