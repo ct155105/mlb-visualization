@@ -1,0 +1,10 @@
+{
+    "name": "Frontend",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "frontend",
+    "shutdownAction": "none",
+    "extensions": ["dbaeumer.vscode-eslint"],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/workspace/frontend",
+    "forwardPorts": [8080]
+  }
